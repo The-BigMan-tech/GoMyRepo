@@ -1,0 +1,278 @@
+/**THE GRID CONTAINER */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 25rem);
+  position: relative;
+  top: 40px;
+  left: 15rem;
+}
+.common-properties {
+  height: 25rem;
+  border-radius: 10px;
+  font-size: 20px;
+}
+/**THE LEFT HAND SIDE */
+.left-side {
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsl(241, 81%, 54%)
+  );
+  border: 2px solid black;
+  padding-bottom: 60px;
+  font-family: Consolas;
+  position: relative;
+  left: 2px;
+  bottom: 20px;
+  padding-bottom: 8rem;
+}
+.result-flex {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 40px;
+}
+.result-circle {
+  border: 2px solid black;
+  background-image: radial-gradient(
+    circle,
+    hsl(252, 100%, 67%),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  text-align: center;
+  position: relative;
+  bottom: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 0px;
+  position: relative;
+  left: 5rem;
+}
+
+.big-font {
+  margin-top: 5rem;
+  font-size: 70px;
+  font-family: Arial;
+  position: relative;
+  bottom: 7px;
+}
+.medium-font {
+  font-size: 30px;
+  margin-top: 0px;
+}
+.transparent {
+  color: hsl(241, 100%, 89%);
+}
+/**THE RIGHT HAND SIDE*/
+.right-side {
+  text-align: left;
+  background-color: hsl(0, 0%, 100%);
+  color: initial;
+  border: 2px solid rgb(185, 183, 183);
+  padding-bottom: 8rem;
+  font-family: Arial;
+  font-weight: bold;
+  position: relative;
+  left: 3px;
+  bottom: 20px;
+}
+.summary-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  bottom: 10px;
+}
+.item {
+  text-wrap: nowrap;
+  word-spacing: 12rem;
+  color: black;
+  font-family: initial;
+  font-size: 15px;
+  position: relative;
+  top: 20px;
+  border: 1px solid black;
+  padding-right: 20rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.continue-item {
+  color: white;
+  background-color: rgb(54, 53, 53);
+  text-align: center;
+  margin: 4rem;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  bottom: 1.2rem;
+  font-weight: lighter;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.continue-item:hover {
+  background-color: white;
+  color: green;
+  cursor: pointer;
+}
+@keyframes bounce {
+  from,
+  to {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+}
+.position-img {
+  position: relative;
+  display: inline;
+  top: 5px;
+  margin-right: 10px;
+}
+.no-space {
+  padding-left: 0;
+  position: relative;
+  right: 12rem;
+}
+.reaction {
+  background-color: hsl(0, 77%, 86%);
+  border: 1px solid red;
+}
+.memory {
+  background-color: hwb(23 80% 2%);
+  border: 1px solid rgb(188, 188, 10);
+}
+.verbal {
+  background-color: hsl(166, 79%, 85%);
+  border: 1px solid green;
+}
+.visual {
+  background-color: hsl(234, 70%, 81%);
+  border: 1px solid blue;
+}
+
+/**EXTERNAL FONTS*/
+.fira-sans-thin {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.fira-sans-extralight {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.fira-sans-light {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-sans-semibold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fira-sans-extrabold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.fira-sans-black {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fira-sans-thin-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.fira-sans-extralight-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.fira-sans-light-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.fira-sans-regular-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fira-sans-medium-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.fira-sans-semibold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fira-sans-bold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fira-sans-extrabold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.fira-sans-black-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
