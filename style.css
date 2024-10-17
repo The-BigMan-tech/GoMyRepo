@@ -15,42 +15,39 @@
 .left-side {
   text-align: center;
   color: white;
+  font-family: Consolas;
   background-image: linear-gradient(
     to bottom,
     hsla(256, 72%, 46%, 1),
     hsl(241, 81%, 54%)
   );
   border: 2px solid black;
-  padding-bottom: 60px;
-  font-family: Consolas;
+  padding-bottom: 8rem;
   position: relative;
   left: 2px;
   bottom: 20px;
-  padding-bottom: 8rem;
 }
-.result-flex {
+.left-flex {
   display: flex;
   flex-direction: column;
   position: relative;
-  bottom: 40px;
+  top: 18px;
 }
-.result-circle {
-  border: 2px solid black;
+.big-circle {
   background-image: radial-gradient(
     circle,
     hsl(252, 100%, 67%),
     hsla(241, 72%, 46%, 0)
   );
+  border: 2px solid black;
   border-radius: 50%;
   width: 15rem;
   height: 15rem;
+  margin: 6rem 0 0px;
   text-align: center;
   position: relative;
-  bottom: 2rem;
-  margin-top: 6rem;
-  margin-bottom: 0px;
-  position: relative;
   left: 5rem;
+  bottom: 2rem;
 }
 
 .big-font {
@@ -67,6 +64,10 @@
 .transparent {
   color: hsl(241, 100%, 89%);
 }
+.space {
+  position: relative;
+  top: 25px;
+}
 /**THE RIGHT HAND SIDE*/
 .right-side {
   text-align: left;
@@ -80,14 +81,18 @@
   left: 3px;
   bottom: 20px;
 }
-.summary-flex {
+.right-flex {
   display: flex;
   flex-direction: column;
   gap: 20px;
   position: relative;
-  bottom: 10px;
+  top: 29px;
 }
-.item {
+.space-again {
+  position: relative;
+  left: 20px;
+}
+.metrics {
   text-wrap: nowrap;
   word-spacing: 12rem;
   color: black;
@@ -96,13 +101,9 @@
   position: relative;
   top: 20px;
   border: 1px solid black;
-  padding-right: 20rem;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 10px;
+  padding: 25px 20rem 25px 10px;
   border-radius: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0px 20px;
 }
 .continue-item {
   color: white;
@@ -111,14 +112,11 @@
   margin: 4rem;
   border: 2px solid black;
   border-radius: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   position: relative;
   bottom: 1.2rem;
   font-weight: lighter;
-  animation-name: bounce;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  animation: bounce 0.5s linear infinite;
 }
 .continue-item:hover {
   background-color: white;
