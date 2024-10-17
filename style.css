@@ -18,10 +18,10 @@
   font-family: Consolas;
   background-image: linear-gradient(
     to bottom,
-    hsla(256, 72%, 46%, 1),
-    hsl(241, 81%, 54%)
+    rgb(95, 63, 252),
+    rgb(62, 50, 238)
   );
-  border: 2px solid black;
+  border: 1px solid black;
   padding-bottom: 8rem;
   position: relative;
   left: 2px;
@@ -34,12 +34,12 @@
   top: 18px;
 }
 .big-circle {
-  background-image: radial-gradient(
-    circle,
-    hsl(252, 100%, 67%),
-    hsla(241, 72%, 46%, 0)
+  background-image: linear-gradient(
+    to bottom,
+    rgb(72, 39, 213),
+    rgb(69, 51, 235)
   );
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 50%;
   width: 15rem;
   height: 15rem;
@@ -71,9 +71,9 @@
 /**THE RIGHT HAND SIDE*/
 .right-side {
   text-align: left;
-  background-color: hsl(0, 0%, 100%);
+  background-color: rgb(255, 255, 255);
   color: initial;
-  border: 2px solid rgb(185, 183, 183);
+  border: 1px solid rgb(185, 183, 183);
   padding-bottom: 8rem;
   font-family: Arial;
   font-weight: bold;
@@ -103,14 +103,14 @@
   border: 1px solid black;
   padding: 25px 20rem 25px 10px;
   border-radius: 10px;
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 .continue-item {
   color: white;
-  background-color: rgb(54, 53, 53);
+  background-color: rgb(48, 59, 89);
   text-align: center;
   margin: 4rem;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 30px;
   padding: 10px;
   position: relative;
@@ -150,20 +150,28 @@
   right: 12rem;
 }
 .reaction {
-  background-color: hsl(0, 77%, 86%);
+  color: rgb(228, 102, 105);
+  background-color: rgb(255, 246, 245);
   border: 1px solid red;
+  font-size: medium;
 }
 .memory {
-  background-color: hwb(23 80% 2%);
+  color: rgb(233, 182, 62);
+  background-color: rgb(255, 251, 242);
   border: 1px solid rgb(188, 188, 10);
+  font-size: medium;
 }
 .verbal {
-  background-color: hsl(166, 79%, 85%);
+  color: rgb(67, 180, 150);
+  background-color: rgb(242, 251, 250);
   border: 1px solid green;
+  font-size: medium;
 }
 .visual {
-  background-color: hsl(234, 70%, 81%);
+  color: rgb(48, 55, 150);
+  background-color: rgb(243, 243, 253);
   border: 1px solid blue;
+  font-size: medium;
 }
 
 /**EXTERNAL FONTS*/
